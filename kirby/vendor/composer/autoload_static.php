@@ -32,6 +32,7 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         ),
         'L' => 
         array (
+            'League\\ColorExtractor\\' => 22,
             'Laminas\\Escaper\\' => 16,
         ),
         'K' => 
@@ -69,6 +70,10 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'League\\ColorExtractor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/color-extractor/src',
+        ),
         'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
@@ -82,10 +87,6 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/league/color-extractor/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -151,6 +152,7 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         'Kirby\\Cms\\Auth\\EmailChallenge' => __DIR__ . '/../..' . '/src/Cms/Auth/EmailChallenge.php',
         'Kirby\\Cms\\Auth\\Status' => __DIR__ . '/../..' . '/src/Cms/Auth/Status.php',
         'Kirby\\Cms\\Block' => __DIR__ . '/../..' . '/src/Cms/Block.php',
+        'Kirby\\Cms\\BlockConverter' => __DIR__ . '/../..' . '/src/Cms/BlockConverter.php',
         'Kirby\\Cms\\Blocks' => __DIR__ . '/../..' . '/src/Cms/Blocks.php',
         'Kirby\\Cms\\Blueprint' => __DIR__ . '/../..' . '/src/Cms/Blueprint.php',
         'Kirby\\Cms\\Collection' => __DIR__ . '/../..' . '/src/Cms/Collection.php',
@@ -417,12 +419,13 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         'Laminas\\Escaper\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/ExceptionInterface.php',
         'Laminas\\Escaper\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/InvalidArgumentException.php',
         'Laminas\\Escaper\\Exception\\RuntimeException' => __DIR__ . '/..' . '/laminas/laminas-escaper/src/Exception/RuntimeException.php',
-        'League\\ColorExtractor\\Color' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Color.php',
-        'League\\ColorExtractor\\ColorExtractor' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/ColorExtractor.php',
-        'League\\ColorExtractor\\Palette' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Palette.php',
+        'League\\ColorExtractor\\Color' => __DIR__ . '/..' . '/league/color-extractor/src/Color.php',
+        'League\\ColorExtractor\\ColorExtractor' => __DIR__ . '/..' . '/league/color-extractor/src/ColorExtractor.php',
+        'League\\ColorExtractor\\Palette' => __DIR__ . '/..' . '/league/color-extractor/src/Palette.php',
         'Michelf\\SmartyPants' => __DIR__ . '/..' . '/michelf/php-smartypants/Michelf/SmartyPants.php',
         'Michelf\\SmartyPantsTypographer' => __DIR__ . '/..' . '/michelf/php-smartypants/Michelf/SmartyPantsTypographer.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'PHPMailer\\PHPMailer\\DSNConfigurator' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/DSNConfigurator.php',
         'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',
         'PHPMailer\\PHPMailer\\OAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuth.php',
         'PHPMailer\\PHPMailer\\OAuthTokenProvider' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuthTokenProvider.php',
@@ -458,6 +461,9 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         'Whoops\\Handler\\PlainTextHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PlainTextHandler.php',
         'Whoops\\Handler\\PrettyPageHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php',
         'Whoops\\Handler\\XmlResponseHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php',
+        'Whoops\\Inspector\\InspectorFactory' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactory.php',
+        'Whoops\\Inspector\\InspectorFactoryInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactoryInterface.php',
+        'Whoops\\Inspector\\InspectorInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorInterface.php',
         'Whoops\\Run' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Run.php',
         'Whoops\\RunInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/RunInterface.php',
         'Whoops\\Util\\HtmlDumperOutput' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/HtmlDumperOutput.php',
@@ -472,7 +478,6 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita8011b477bb239488e5d139cdeb7b31e::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita8011b477bb239488e5d139cdeb7b31e::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInita8011b477bb239488e5d139cdeb7b31e::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita8011b477bb239488e5d139cdeb7b31e::$prefixesPsr0;
             $loader->classMap = ComposerStaticInita8011b477bb239488e5d139cdeb7b31e::$classMap;
 

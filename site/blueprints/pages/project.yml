@@ -1,0 +1,44 @@
+title: Project
+icon: circle
+
+pages: false
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          # cover:
+          #   label: Cover
+          #   type: select
+          #   options: files
+          #   icon: image
+
+          text:
+            label: Content
+            type: blocks
+            empty: Hier Blöcke erstellen.
+            fieldsets:
+              - heading
+              - text
+              - list
+              - image
+              - video
+
+          year:
+            label: Year
+            type: date
+            display: YYYY
+            width: 1/4
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sticky: true
+    sections:
+      # a list of files
+      files:
+        type: files
+        label: Files

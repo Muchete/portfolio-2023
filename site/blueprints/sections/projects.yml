@@ -1,0 +1,14 @@
+type: pages
+label: Projects
+templates:
+  - project
+# parent: kirby.page("home")
+size: small
+layout: cards
+info: "{{ page.year.toDate('Y') }}"
+template: album
+empty: No Projects yet
+image:
+  query: page.cover
+  cover: true
+  ratio: 5/4

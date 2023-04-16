@@ -1,0 +1,16 @@
+title: About
+icon: user
+
+pages: false
+
+options:
+  delete: false
+
+fields:
+  aboutText:
+    label: About
+    type: textarea
+
+  text:
+    label: Text
+    type: textarea
